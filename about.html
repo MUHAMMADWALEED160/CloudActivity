@@ -1,24 +1,237 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-<title>My Cloud Website</title>
-<link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Cloud Website</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #0f172a, #1e3a8a);
+            color: white;
+            min-height: 100vh;
+        }
+
+        /* Header Section */
+        header{
+            padding: 25px 60px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: rgba(255,255,255,0.08);
+            backdrop-filter: blur(10px);
+            box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+        }
+
+        .logo{
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: #60a5fa;
+        }
+
+        /* Navigation */
+        nav a{
+            text-decoration: none;
+            color: white;
+            margin-left: 20px;
+            font-weight: 500;
+            padding: 10px 18px;
+            border-radius: 10px;
+            transition: 0.3s;
+        }
+
+        nav a:hover{
+            background: #3b82f6;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(59,130,246,0.5);
+        }
+
+        /* Hero Section */
+        .hero{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 100px 20px;
+        }
+
+        .hero h1{
+            font-size: 4rem;
+            margin-bottom: 20px;
+            color: #93c5fd;
+            text-shadow: 0 4px 10px rgba(0,0,0,0.4);
+        }
+
+        .hero p{
+            max-width: 700px;
+            font-size: 1.2rem;
+            line-height: 1.8;
+            color: #dbeafe;
+        }
+
+        /* Cards Section */
+        .container{
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 25px;
+            padding: 50px;
+        }
+
+        .card{
+            background: rgba(255,255,255,0.1);
+            padding: 30px;
+            width: 300px;
+            border-radius: 20px;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+            transition: 0.4s;
+        }
+
+        .card:hover{
+            transform: translateY(-10px) scale(1.03);
+        }
+
+        .card h2{
+            margin-bottom: 15px;
+            color: #60a5fa;
+        }
+
+        .card p{
+            color: #e2e8f0;
+            line-height: 1.6;
+        }
+
+        /* About Section */
+        .about{
+            text-align: center;
+            padding: 60px 20px;
+        }
+
+        .about h1{
+            margin-bottom: 15px;
+            color: #93c5fd;
+        }
+
+        .about p{
+            font-size: 1.1rem;
+            color: #dbeafe;
+        }
+
+        /* Footer */
+        footer{
+            text-align: center;
+            padding: 20px;
+            background: rgba(255,255,255,0.08);
+            margin-top: 40px;
+        }
+
+        footer p{
+            color: #cbd5e1;
+        }
+
+        /* Responsive */
+        @media(max-width: 768px){
+
+            header{
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            .hero h1{
+                font-size: 2.5rem;
+            }
+
+            .container{
+                padding: 20px;
+            }
+
+        }
+
+    </style>
 </head>
 
 <body>
 
-<h1>Welcome to My Cloud Website</h1>
+    <!-- Header -->
+    <header>
 
-<nav>
-<a href="index.html">Home</a>
-<a href="about.html">About</a>
-<a href="contact.html">Contact</a>
-</nav>
+        <div class="logo">☁ CloudSite</div>
 
-<p>This website is hosted on GitHub cloud platform.</p>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+
+        <h1>Welcome to My Cloud Website</h1>
+
+        <p>
+            This modern website is hosted on GitHub cloud platform.
+            It demonstrates cloud computing concepts with a stylish and responsive design.
+        </p>
+
+    </section>
+
+    <!-- Cards -->
+    <section class="container">
+
+        <div class="card">
+            <h2>Cloud Hosting</h2>
+            <p>
+                Learn how websites are deployed and hosted using modern cloud platforms.
+            </p>
+        </div>
+
+        <div class="card">
+            <h2>Fast Performance</h2>
+            <p>
+                Experience responsive and optimized web design with smooth animations.
+            </p>
+        </div>
+
+        <div class="card">
+            <h2>GitHub Integration</h2>
+            <p>
+                Easily manage and deploy your website directly from GitHub repositories.
+            </p>
+        </div>
+
+    </section>
+
+    <!-- About Section -->
+    <section class="about">
+
+        <h1>About Page</h1>
+
+        <p>
+            This is a cloud computing practical lab project created using HTML and CSS.
+        </p>
+
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 My Cloud Website | Designed by Muhammad Waleed</p>
+    </footer>
 
 </body>
 </html>
-
-<h1>About Page</h1>
-<p>This is cloud computing practical lab.</p>
