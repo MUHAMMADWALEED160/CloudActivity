@@ -1,2 +1,169 @@
-<h1>Contact Page</h1>
-<p>Email: student@email.com</p>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Page</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #0f172a, #1e40af);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            padding: 20px;
+        }
+
+        /* Contact Card */
+        .contact-container{
+            width: 100%;
+            max-width: 500px;
+            background: rgba(255,255,255,0.1);
+            padding: 40px;
+            border-radius: 25px;
+            backdrop-filter: blur(12px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.4);
+            text-align: center;
+            animation: fadeIn 1s ease;
+        }
+
+        .contact-container h1{
+            font-size: 3rem;
+            margin-bottom: 15px;
+            color: #93c5fd;
+            text-shadow: 0 4px 10px rgba(0,0,0,0.3);
+        }
+
+        .contact-container p{
+            color: #dbeafe;
+            margin-bottom: 25px;
+            font-size: 1.1rem;
+        }
+
+        /* Contact Info */
+        .contact-info{
+            margin-top: 20px;
+        }
+
+        .info-box{
+            background: rgba(255,255,255,0.08);
+            padding: 18px;
+            border-radius: 15px;
+            margin-bottom: 15px;
+            transition: 0.3s ease;
+        }
+
+        .info-box:hover{
+            transform: translateY(-5px);
+            background: rgba(59,130,246,0.3);
+        }
+
+        .info-box h3{
+            margin-bottom: 8px;
+            color: #60a5fa;
+        }
+
+        .info-box p{
+            margin: 0;
+            color: #e2e8f0;
+        }
+
+        /* Contact Button */
+        .btn{
+            display: inline-block;
+            margin-top: 20px;
+            text-decoration: none;
+            background: #2563eb;
+            color: white;
+            padding: 12px 25px;
+            border-radius: 12px;
+            font-weight: 600;
+            transition: 0.3s;
+            box-shadow: 0 5px 15px rgba(37,99,235,0.5);
+        }
+
+        .btn:hover{
+            background: #1d4ed8;
+            transform: scale(1.05);
+        }
+
+        /* Animation */
+        @keyframes fadeIn{
+
+            from{
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to{
+                opacity: 1;
+                transform: translateY(0);
+            }
+
+        }
+
+        /* Responsive */
+        @media(max-width: 600px){
+
+            .contact-container{
+                padding: 25px;
+            }
+
+            .contact-container h1{
+                font-size: 2.2rem;
+            }
+
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div class="contact-container">
+
+        <h1>Contact Page</h1>
+
+        <p>
+            Feel free to contact us for any queries related to cloud computing projects and web development.
+        </p>
+
+        <div class="contact-info">
+
+            <div class="info-box">
+                <h3>Email</h3>
+                <p>student@email.com</p>
+            </div>
+
+            <div class="info-box">
+                <h3>Phone</h3>
+                <p>+92 300 1234567</p>
+            </div>
+
+            <div class="info-box">
+                <h3>Location</h3>
+                <p>Islamabad, Pakistan</p>
+            </div>
+
+        </div>
+
+        <a href="index.html" class="btn">Back to Home</a>
+
+    </div>
+
+</body>
+</html>
